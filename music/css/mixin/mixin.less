@@ -1,0 +1,41 @@
+.onePx(top,@color){
+  position: relative;
+  &:after{
+    content: "";
+    display: block;
+
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    background: @color;
+
+    @media only screen and(-webkit-device-pixel-ratio: 2){
+      transform: scaleY(.5);
+    }
+    @media only screen and(-webkit-device-pixel-ratio: 3){
+      transform: scaleY(.3333333);
+    }
+  }
+}
+
+.onePx(bottom,@color){
+  position: relative;
+  &:after{
+    content: "";
+    display: block;
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: @color;
+
+    @media only screen and(-webkit-device-pixel-ratio: 2){
+      transform: scaleY(.5);
+    }
+    @media only screen and(-webkit-device-pixel-ratio: 3){
+      transform: scaleY(.3333333);
+    }
+  }
+}

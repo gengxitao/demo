@@ -1,0 +1,36 @@
+/*组件的样式*/
+.course-wrap {
+  width: 100%;
+  position: relative;
+}
+/*#wrap .course-wrap > .list{list-style: none;overflow: hidden;position: absolute;transition: 1s left;}*/
+.course-wrap > .list {
+  list-style: none;
+  overflow: hidden;
+}
+.course-wrap > .list > li {
+  float: left;
+}
+.course-wrap > .list > li img {
+  display: block;
+  width: 100%;
+}
+.course-wrap > .course-point {
+  height: 20px;
+  position: absolute;
+  bottom: 0;
+  z-index: 99;
+  width: 100%;
+  text-align: center;
+}
+.course-wrap > .course-point > span {
+  display: inline-block;
+  margin-right: 5px;
+  width: 10px;
+  height: 10px;
+  background: darkgreen;
+  border-radius: 50%;
+}
+.course-wrap > .course-point > span.active {
+  background: red;
+}

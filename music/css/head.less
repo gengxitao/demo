@@ -1,0 +1,131 @@
+// 1rem包含多少个位图像素
+@rem:1080/16rem;
+@import "extend/extend";
+@import "mixin/mixin";
+#wrap{
+  background: #eee;
+  font-size: 0;
+  & > .head{
+    height: 270/@rem;
+    background: #232323;
+    position: relative;
+    z-index: 10;
+    .head-top{
+      height: 135/@rem;
+      overflow: hidden;
+      .logo{
+        float: left;
+        width: 240/@rem;
+        height: 88/@rem;
+        margin: 26/@rem 17/@rem 21/@rem;
+        & > img{
+          width: 100%;
+        }
+      }
+      .btn{
+        float: left;
+        width: 129/@rem;
+        height: 135/@rem;
+        background: url("../img/menuBtn.png") no-repeat;
+        background-size:82/@rem 233/@rem;
+        background-position: center 16/@rem;
+        &.active{
+          background-position: center -120/@rem;
+        }
+      }
+      .btns{
+        float: right;
+        margin-top: 21/@rem;
+        & >a{
+          float: left;
+          width:111/@rem ;
+          height: 78/@rem;
+          line-height: 78/@rem;
+          background: #690;
+          color: #ccc;
+          margin-right: 15/@rem;
+          font-size: 42/@rem;
+          text-align: center;
+          border-radius: 8/@rem;
+          &:nth-child(1){
+            width: 130/@rem;
+            height: 88/@rem;
+            line-height: 88/@rem;
+            color: #fff;
+            font-weight: bold;
+            border-radius: 10/@rem;
+            margin-right: 30/@rem;
+            margin-top: 3/@rem;
+          }
+        }
+      }
+    }
+    .head-bottom{
+      height: 103/@rem;
+      padding: 16/@rem;
+      form{
+        &:extend(.clearfix all);
+        & > input{
+          box-sizing: border-box;
+          &[type="text"]{
+            float: left;
+            width: 829/@rem;
+            height: 103/@rem;
+            background: #999;
+            padding: 5/@rem 10/@rem;
+            font-size: 41/@rem;
+            color: #333;
+            border-radius: 15/@rem 0 0 15/@rem;
+            border: 1px solid #5a5a5a;
+            &::-webkit-input-placeholder{
+              color: #333;
+            }
+            &:focus{
+              background: white;
+            }
+          }
+          &[type="button"]{
+            float: right;
+            width: 203/@rem;
+            height: 103/@rem;
+            background: #414040;
+            color: #fff;
+            font-size : 51/@rem;
+            font-weight: 800;
+            border-radius: 0  15/@rem 15/@rem 0;
+          }
+        }
+      }
+    }
+    .mask{
+      display: none;
+      .onePx(top,#6a6a6a);
+      width: 100%;
+      padding: 10/@rem 0;
+      position: absolute;
+      z-index: 9;
+      top: 135/@rem;
+      background: rgba(0, 0, 0, .8);
+      .list{
+        &:extend(.clearfix all);
+        flex-wrap: wrap;
+        padding: 0;
+        li{
+          float: left;
+          width: 22.5%;
+          text-align: center;
+          height: 135/@rem;
+          line-height: 135/@rem;
+          a{
+            float: left;
+            width: 100%;
+            height: 100%;
+            font-size: 54/@rem;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,153 @@
+.clearfix,
+#wrap > .head .head-bottom form,
+#wrap > .head .mask .list {
+  *zoom: 1;
+}
+.clearfix:after,
+#wrap > .head .head-bottom form:after,
+#wrap > .head .mask .list:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#wrap {
+  background: #eee;
+  font-size: 0;
+}
+#wrap > .head {
+  height: 4rem;
+  background: #232323;
+  position: relative;
+  z-index: 10;
+}
+#wrap > .head .head-top {
+  height: 2rem;
+  overflow: hidden;
+}
+#wrap > .head .head-top .logo {
+  float: left;
+  width: 3.55555556rem;
+  height: 1.3037037rem;
+  margin: 0.38518519rem 0.25185185rem 0.31111111rem;
+}
+#wrap > .head .head-top .logo > img {
+  width: 100%;
+}
+#wrap > .head .head-top .btn {
+  float: left;
+  width: 1.91111111rem;
+  height: 2rem;
+  background: url("../img/menuBtn.png") no-repeat;
+  background-size: 1.21481481rem 3.45185185rem;
+  background-position: center 0.23703704rem;
+}
+#wrap > .head .head-top .btn.active {
+  background-position: center -1.77777778rem;
+}
+#wrap > .head .head-top .btns {
+  float: right;
+  margin-top: 0.31111111rem;
+}
+#wrap > .head .head-top .btns > a {
+  float: left;
+  width: 1.64444444rem;
+  height: 1.15555556rem;
+  line-height: 1.15555556rem;
+  background: #690;
+  color: #ccc;
+  margin-right: 0.22222222rem;
+  font-size: 0.62222222rem;
+  text-align: center;
+  border-radius: 0.11851852rem;
+}
+#wrap > .head .head-top .btns > a:nth-child(1) {
+  width: 1.92592593rem;
+  height: 1.3037037rem;
+  line-height: 1.3037037rem;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 0.14814815rem;
+  margin-right: 0.44444444rem;
+  margin-top: 0.04444444rem;
+}
+#wrap > .head .head-bottom {
+  height: 1.52592593rem;
+  padding: 0.23703704rem;
+}
+#wrap > .head .head-bottom form > input {
+  box-sizing: border-box;
+}
+#wrap > .head .head-bottom form > input[type="text"] {
+  float: left;
+  width: 12.28148148rem;
+  height: 1.52592593rem;
+  background: #999;
+  padding: 0.07407407rem 0.14814815rem;
+  font-size: 0.60740741rem;
+  color: #333;
+  border-radius: 0.22222222rem 0 0 0.22222222rem;
+  border: 1px solid #5a5a5a;
+}
+#wrap > .head .head-bottom form > input[type="text"]::-webkit-input-placeholder {
+  color: #333;
+}
+#wrap > .head .head-bottom form > input[type="text"]:focus {
+  background: white;
+}
+#wrap > .head .head-bottom form > input[type="button"] {
+  float: right;
+  width: 3.00740741rem;
+  height: 1.52592593rem;
+  background: #414040;
+  color: #fff;
+  font-size: 0.75555556rem;
+  font-weight: 800;
+  border-radius: 0 0.22222222rem 0.22222222rem 0;
+}
+#wrap > .head .mask {
+  display: none;
+  position: relative;
+  width: 100%;
+  padding: 0.14814815rem 0;
+  position: absolute;
+  z-index: 9;
+  top: 2rem;
+  background: rgba(0, 0, 0, 0.8);
+}
+#wrap > .head .mask:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  background: #6a6a6a;
+}
+@media only screen and (-webkit-device-pixel-ratio: 2) {
+  #wrap > .head .mask:after {
+    transform: scaleY(0.5);
+  }
+}
+@media only screen and (-webkit-device-pixel-ratio: 3) {
+  #wrap > .head .mask:after {
+    transform: scaleY(0.3333333);
+  }
+}
+#wrap > .head .mask .list {
+  flex-wrap: wrap;
+  padding: 0;
+}
+#wrap > .head .mask .list li {
+  float: left;
+  width: 22.5%;
+  text-align: center;
+  height: 2rem;
+  line-height: 2rem;
+}
+#wrap > .head .mask .list li a {
+  float: left;
+  width: 100%;
+  height: 100%;
+  font-size: 0.8rem;
+  color: white;
+}

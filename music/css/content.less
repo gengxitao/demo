@@ -1,0 +1,158 @@
+@import "mixin/mixin";
+@import "font/font";
+@rem:1080/16rem;
+#wrap{
+  position: relative;
+  & > .content{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top:270/@rem;
+    .nav{
+      .onePx(bottom,black);
+      box-sizing: border-box;
+      height: 177/@rem;
+      padding: 31/@rem 0 14/@rem 0;
+      background: #EEEEEE;
+      .list{
+        &:extend(.clearfix all);
+        padding: 0;
+        float: left;
+        white-space: nowrap;
+        li{
+          display: inline-block;
+          height: 129/@rem;
+          line-height:129/@rem ;
+          padding: 0 38/@rem;
+          a{
+            font-size: 66/@rem;
+            color: #020202;
+          }
+          &.active{
+            background: #690;
+            a{
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+    .tap-wrap{
+      width: 1046/@rem;
+      margin: 0 auto;
+      background: #fff;
+      overflow: hidden;
+      .tap-head{
+        &:extend(.clearfix all);
+        height: 135/@rem;
+        line-height: 135/@rem;
+        h2{
+          float: left;
+          font-size: 66/@rem;
+        }
+        span{
+          float: right;
+          font-size: 41/@rem;
+          i{
+            margin-left: 20/@rem;
+          }
+        }
+      }
+      .tap-nav{
+        position: relative;
+        height: 105/@rem;
+        line-height: 105/@rem;
+        a{
+          color: #6b6b6b;
+          float: left;
+          font-size: 44/@rem;
+          height: 105/@rem;
+          line-height: 105/@rem;
+          text-align: center;
+          margin-right: 15/@rem;
+        }
+        .smallG{
+          position: absolute;
+          left:0;
+          bottom: 10/@rem;
+          width: 85/@rem;
+          height: 9/@rem;
+          background: #6f900d;
+          transition: 1s transform,1s width;
+        }
+      }
+      .tap-content{
+        &:extend(.clearfix all);
+        width: 300%;
+        &>ul{
+          width: 33.333333%;
+          float: left;
+          &.list{
+            &:extend(.clearfix all);
+            li{
+              box-sizing: border-box;
+              float: left;
+              width: 506/@rem;
+              margin: 8/@rem;
+              padding: 5/@rem;
+              font-size: 40/@rem;
+              background:#efefef ;
+              .top{
+                a{
+                  color: #000;
+                  overflow: hidden;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                  img{
+                    width: 100%;
+                  }
+                  span{
+                    color: dimgray;
+                  }
+                }
+              }
+              .bottom{
+                .play{
+                  float: left;
+                  margin-right: 30/@rem;
+                  i{
+                    display: inline-block;
+                    background: url('../img/ice.png') no-repeat;
+                    background-position:0 0 ;
+                    width: 40/@rem;
+                    height: 40/@rem;
+                    vertical-align: middle;
+                  }
+                  span{
+                    vertical-align: middle;
+                  }
+                }
+                .say{
+                  float: left;
+                  i{
+                    display: inline-block;
+                    background: url('../img/ice.png') no-repeat;
+                    background-position:0 -55/@rem ;
+                    width: 40/@rem;
+                    height: 40/@rem;
+                    vertical-align: middle;
+                  }
+                  span{
+                    vertical-align: middle;
+                  }
+                }
+              }
+            }
+          }
+          &.loading{
+            opacity: 0;
+            background: url("../img/loading.gif") no-repeat;
+            background-position:center ;
+          }
+        }
+
+      }
+    }
+  }
+}

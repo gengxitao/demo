@@ -1,0 +1,187 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?ef4eek');
+  src: url('../fonts/icomoon.eot?ef4eek#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?ef4eek') format('truetype'), url('../fonts/icomoon.woff?ef4eek') format('woff'), url('../fonts/icomoon.svg?ef4eek#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-circle-right:before {
+  content: "\ea42";
+}
+#wrap {
+  position: relative;
+}
+#wrap > .content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 4rem;
+}
+#wrap > .content .nav {
+  position: relative;
+  box-sizing: border-box;
+  height: 2.62222222rem;
+  padding: 0.45925926rem 0 0.20740741rem 0;
+  background: #EEEEEE;
+}
+#wrap > .content .nav:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: #000000;
+}
+@media only screen and (-webkit-device-pixel-ratio: 2) {
+  #wrap > .content .nav:after {
+    transform: scaleY(0.5);
+  }
+}
+@media only screen and (-webkit-device-pixel-ratio: 3) {
+  #wrap > .content .nav:after {
+    transform: scaleY(0.3333333);
+  }
+}
+#wrap > .content .nav .list {
+  padding: 0;
+  float: left;
+  white-space: nowrap;
+}
+#wrap > .content .nav .list li {
+  display: inline-block;
+  height: 1.91111111rem;
+  line-height: 1.91111111rem;
+  padding: 0 0.56296296rem;
+}
+#wrap > .content .nav .list li a {
+  font-size: 0.97777778rem;
+  color: #020202;
+}
+#wrap > .content .nav .list li.active {
+  background: #690;
+}
+#wrap > .content .nav .list li.active a {
+  color: #fff;
+}
+#wrap > .content .tap-wrap {
+  width: 15.4962963rem;
+  margin: 0 auto;
+  background: #fff;
+  overflow: hidden;
+}
+#wrap > .content .tap-wrap .tap-head {
+  height: 2rem;
+  line-height: 2rem;
+}
+#wrap > .content .tap-wrap .tap-head h2 {
+  float: left;
+  font-size: 0.97777778rem;
+}
+#wrap > .content .tap-wrap .tap-head span {
+  float: right;
+  font-size: 0.60740741rem;
+}
+#wrap > .content .tap-wrap .tap-head span i {
+  margin-left: 0.2962963rem;
+}
+#wrap > .content .tap-wrap .tap-nav {
+  position: relative;
+  height: 1.55555556rem;
+  line-height: 1.55555556rem;
+}
+#wrap > .content .tap-wrap .tap-nav a {
+  color: #6b6b6b;
+  float: left;
+  font-size: 0.65185185rem;
+  height: 1.55555556rem;
+  line-height: 1.55555556rem;
+  text-align: center;
+  margin-right: 0.22222222rem;
+}
+#wrap > .content .tap-wrap .tap-nav .smallG {
+  position: absolute;
+  left: 0;
+  bottom: 0.14814815rem;
+  width: 1.25925926rem;
+  height: 0.13333333rem;
+  background: #6f900d;
+  transition: 1s transform,1s width;
+}
+#wrap > .content .tap-wrap .tap-content {
+  width: 300%;
+}
+#wrap > .content .tap-wrap .tap-content > ul {
+  width: 33.333333%;
+  float: left;
+}
+#wrap > .content .tap-wrap .tap-content > ul.list li {
+  box-sizing: border-box;
+  float: left;
+  width: 7.4962963rem;
+  margin: 0.11851852rem;
+  padding: 0.07407407rem;
+  font-size: 0.59259259rem;
+  background: #efefef ;
+}
+#wrap > .content .tap-wrap .tap-content > ul.list li .top a {
+  color: #000;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#wrap > .content .tap-wrap .tap-content > ul.list li .top a img {
+  width: 100%;
+}
+#wrap > .content .tap-wrap .tap-content > ul.list li .top a span {
+  color: dimgray;
+}
+#wrap > .content .tap-wrap .tap-content > ul.list li .bottom .play {
+  float: left;
+  margin-right: 0.44444444rem;
+}
+#wrap > .content .tap-wrap .tap-content > ul.list li .bottom .play i {
+  display: inline-block;
+  background: url('../img/ice.png') no-repeat;
+  background-position: 0 0 ;
+  width: 0.59259259rem;
+  height: 0.59259259rem;
+  vertical-align: middle;
+}
+#wrap > .content .tap-wrap .tap-content > ul.list li .bottom .play span {
+  vertical-align: middle;
+}
+#wrap > .content .tap-wrap .tap-content > ul.list li .bottom .say {
+  float: left;
+}
+#wrap > .content .tap-wrap .tap-content > ul.list li .bottom .say i {
+  display: inline-block;
+  background: url('../img/ice.png') no-repeat;
+  background-position: 0 -0.81481481rem;
+  width: 0.59259259rem;
+  height: 0.59259259rem;
+  vertical-align: middle;
+}
+#wrap > .content .tap-wrap .tap-content > ul.list li .bottom .say span {
+  vertical-align: middle;
+}
+#wrap > .content .tap-wrap .tap-content > ul.loading {
+  opacity: 0;
+  background: url("../img/loading.gif") no-repeat;
+  background-position: center ;
+}
